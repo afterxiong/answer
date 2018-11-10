@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:id="@+id/sss">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text"
+                    android:text="内容"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="1000dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:padding="100dp"
+                    android:textSize="40sp"
+                    android:text="到底了"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:background="#b9d3ed"
+            android:layout_marginBottom="200dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_height="wrap_content"/>
+
+
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="200dp">
+
+
+        <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:background="#f2a690"
+                    android:layout_height="100dp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:background="#e2e25d"
+                    android:layout_height="100dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:background="#30ce7f"
+                    android:layout_height="100dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:background="#1c35da"
+                    android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
